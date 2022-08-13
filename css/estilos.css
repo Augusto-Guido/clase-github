@@ -1,0 +1,58 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* propiedades del padre */
+
+.padre{
+    /* siempre utilizar el codigo al utilizar flex*/
+
+    display: flex;
+
+    height: 800px;
+  
+    background-color: blue;
+    /* formato de columna 
+
+    flex-direction: column;*/
+
+    /* los elementos colapsan y se pone uno abajo de otro 
+    
+    flex-wrap: wrap */
+
+    /* por defecto flex trabaja en 
+
+    flex-direction: row;
+    flex-wrap: nowrap; */
+    
+    /* para dar vuelta la direcion aplicar 
+    flex-direction: column-reverse; */
+
+  
+    /* flex-flow*/
+    flex-flow: row wrap;
+    
+
+    /* propiedad para justificar elementos */
+
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    
+
+    /* con esta propiedad centro en el eje horizontal 
+    align-items: center;*/
+}
+
+/* hijos */
+
+.hijo{
+    background-color: aqua;
+    width: 150px;
+    height: 150px; 
+    margin: 10px; 
+}
